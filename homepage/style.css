@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #ed5585;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4rem;
+}
+nav .logo{
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+nav .logo img{
+    width: 100%;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .profile img{
+    width: 40px;
+    margin-right: 10px;
+}
+nav .profile p{
+    color: #fff;
+    font-family: sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+}
+nav .profile i{
+    color: #fff;
+    font-size: 16px;
+    margin-top: -3px;
+}
+.dropDown{
+    position: absolute;
+    right: 20px;
+    background-color: #6d9ac4;
+    width: fit-content;
+    border-top: 1px solid #000;
+    display: none   ;
+}
+.dropDown ul{
+    width: 180px;
+}
+.dropDown ul li{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.dropDown ul li i{
+    margin-right: 25px;
+}
+
+/* Main Section */
+.heading h1{
+    font-size: 42px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6d9ac4;
+    margin: 20px 0 10px 8%;
+}
+.Quizes{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#QuizName{
+    border: 1px solid #000;
+    width: 30%;
+    padding: 10px 20px;
+    margin: 15px;
+}
+#QuizName h3{
+    font-size: 32px;
+    color: #ed5585;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#QuizName h6{
+    font-size: 20px;
+    color: #6d9ac4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+#QuizName div{
+    margin-top: 30px;
+    border: 1px solid #6d9ac4;
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #6d9ac4;
+    text-align: center;
+    cursor: default;
+}
+
+/* QuizQuestion */
+.startQuiz{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    width: 50%;
+    margin: auto;
+    /* display: none; */
+}
+#quizQues{
+    
+}
+#quizQues h3{
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ed5585;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+#quizQues ul li{
+    padding: 10px 15px;
+    margin: 10px 0;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 22px;
+    background-color: #6d9ac4;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#quizQues ul li input{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+#quizQues button{
+    background-color: #ed5585;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+}
+#quizQues button:disabled{
+    background-color: #d495a9;
+}
+
+/* Result */
+#result{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ed5585;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#result #quiz{
+    color: #fff;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+.congrats{
+    margin-top: 20px;
+    text-align: center;
+}
+.congrats h3{
+    color: #b3ed55;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#totQues,#corQues{
+    width: 400px;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #0b156b;
+    border-top: 1px solid #000;
+}
+#totQues h4,#corQues h4{
+    font-size: 20px;
+}
+#totQues h6,#corQues h6{
+    font-size: 18px;
+}
+.circle{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.5rem;
+    transform: rotate(-90deg);
+}
+#percen{
+    position: absolute;
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%);
+    font-size: 32px;
+}
+/* SVG */
+circle{
+    fill: none;
+    stroke: #b3ed55;
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+#result #button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+#result a{
+    color: #fff;
+    background-color: #6d9ac4;
+    text-decoration: none;
+    padding: 10px 20px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="superMain">
+        <nav>
+            <div class="logo">
+                <img src="../Assets/QuizLogo.png" alt="">
+            </div>
+            <div class="profile">
+                <img src="../Assets/personLogo.png" alt="">
+                <p id="UserName"></p>
+                <i class="fa-solid fa-caret-down" onclick="dropdown()"></i>
+            </div>
+        </nav>
+        <div class="dropDown">
+            <ul>
+                <li><i class="fa-solid fa-chart-simple"></i>Results</li>
+                <li id="logout"><i class="fa-solid fa-arrow-rotate-right"></i>Logout</li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="heading">
+                <h1>Wellcome,<span>UserName</span></h1>
+            </div>
+            <div class="Quizes">
+                <!-- <div id="QuizName">
+                <h3>HTML</h3>
+                <h6><span>00</span> Quizes</h6>
+                <div onclick="htmlQuiz()"class="join"><p>Join</p></div>
+            </div> -->
+            </div>
+        </main>
+    </div>
+    <div class="startQuiz">
+        <!-- <div id="quizQues">
+            <h3 id="Question"></h3>
+            <ul>
+                <li><input type="radio" value="HTML" id="opt1"></li>
+                <li><input type="radio" value="CSS" id="opt2"></li>
+                <li><input type="radio" value="JAVASCRIPT" id="opt3"></li>
+                <li><input type="radio" value="BOOTSTRAP" id="opt4"></li>
+            </ul>
+            <button onclick="nextQuestion()">Next Question</button>
+        </div> -->
+    </div>
+    <div id="result">
+        <h2 id="quiznme"></h2>
+        <div class="congrats">
+            <h3 id="congrtulation"></h3>
+            <div id="totQues">
+                <h4>Total Question</h4>
+                <h6>25</h6>
+            </div>
+            <div id="corQues">
+                <h4>Correct Answer</h4>
+                <h6>21</h6>
+            </div>
+        </div>
+        <h3 id="percen"></h3>
+        <div class="circle">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div id="button"><a href="./index.html">Back to Home</a></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

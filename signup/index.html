@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <h3>SIGN UP</h3>
+            <div id="username">
+                <label for="name">User Name</label>
+                <input type="text" id="name">
+                <p id="namealert"></p>
+            </div>
+            <div id="useremail">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <p id="emailalert"></p>
+            </div>
+            <div id="userPass">
+                <label for="password">Password</label>
+                <div style="position: relative;"><input type="password" id="password">
+                    <i class="fa-solid fa-eye" onclick="showpasswordHandler()" id="eyeopen"></i>
+                </div>
+                <p id="passwordalert"></p>
+            </div>
+            <div id="confirmPass">
+                <label for="confirmpassword">Confirm Password</label>
+                <div style="position: relative;"><input type="password" id="confirmpassword">
+                <i class="fa-solid fa-eye" onclick="showconfirmpasswordHandler()" id="confirmEyeOpen"></i>
+                </div>
+                <p id="confirmPassalert"></p>
+            </div>
+            <div id="btn" onclick="signuphandler()">SIGN UP</div>
+            <p id="already">Already a User?<a href="../login/index.html">LOGIN</a></p>
+        </div>
+    </div>
+    <div id="warning">
+        <div id="warnImg">
+            <img src="../Assets/Check.png" alt="" id="warningImage">
+        </div>
+        <h2 id="warningHeading">Sign Up SuccessFully</h2>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

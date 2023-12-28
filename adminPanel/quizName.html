@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quizname.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../Assets/QuizLogo.png" alt="">
+        </div>
+        <div class="profile">
+            <ul>
+                <li><a href="./quizName.html">Quizes Name</a></li>
+                <li><a href="./QuizQuestion.html">Quiz Questions</a></li>
+                <li id="setting">
+                    <img src="../Assets/personLogo.png" alt="">
+                    <p id="UserName"></p>
+                    <i class="fa-solid fa-caret-down" onclick="dropdown()"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dropDown">
+        <ul>
+            <!-- <li id="logout"><i class="fa-solid fa-arrow-rotate-right"></i>List</li> -->
+            <li id="logout"><i class="fa-solid fa-arrow-rotate-right"></i>Logout</li>
+        </ul>
+    </div>
+    <main>
+        <div id="QuizType">
+            <h2>QUIZES NAME</h2>
+            <ul id="Quizlist">
+                <!-- <li>
+                    <span>HTML</span>
+                    <span>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="QuizForm">
+            <i class="fa-solid fa-xmark"></i>
+            <h2>Quiz Category</h2>
+            <input type="text" placeholder="Enter Quiz Name" id="quizname">
+            <p id="quiznamealert"></p>
+            <button onclick="quizedithandler()">Edit</button>
+        </div>
+    </main>
+    <script src="quizName.js"></script>
+</body>
+
+</html>

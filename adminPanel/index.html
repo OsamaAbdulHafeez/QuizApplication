@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../Assets/QuizLogo.png" alt="">
+        </div>
+        <div class="profile">
+            <ul>
+                <li><a href="./quizName.html">Quizes Name</a></li>
+                <li><a href="./QuizQuestion.html">Quiz Questions</a></li>
+                <li id="setting">
+                    <img src="../Assets/personLogo.png" alt="">
+                    <p id="UserName"></p>
+                    <i class="fa-solid fa-caret-down" onclick="dropdown()"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dropDown">
+        <ul>
+            <!-- <li id="logout"><i class="fa-solid fa-arrow-rotate-right"></i>List</li> -->
+            <li id="logout"><i class="fa-solid fa-arrow-rotate-right"></i>Logout</li>
+        </ul>
+    </div>
+    <main>
+        <div class="AdminForms">
+            <div class="QuizForm">
+                <h2>Quiz Category</h2>
+                <input type="text" placeholder="Enter Quiz Name" id="quizname">
+                <p id="quiznamealert"></p>
+                <button onclick="quizUpload()">upload</button>
+            </div>
+            <div class="QuizForm">
+                <h2>Quiz Question</h2>
+                <input type="text" placeholder="Enter Quiz Question" id="quizQues">
+                <p id="quizquealert"></p>
+                <input type="text" placeholder="option1" id="quizopt1">
+                <p id="quizoption1alert"></p>
+                <input type="text" placeholder="option2" id="quizopt2">
+                <p id="quizoption2alert"></p>
+                <input type="text" placeholder="option3" id="quizopt3">
+                <p id="quizoption3alert"></p>
+                <input type="text" placeholder="option4" id="quizopt4">
+                <p id="quizoption4alert"></p>
+                <input type="text" placeholder="Correct Answer" id="quizanswer">
+                <p id="quizansweralert"></p>
+                <select name="" id="category">
+                    <option value="" selected disabled>Selected Category</option>
+                </select>
+                <p id="categoryalert"></p>
+                <button onclick="quizQuestion()">upload</button>
+            </div>
+        </div>
+    </main>
+    <div id="warning">
+        <div id="warnImg">
+            <img src="../Assets/Check.png" alt="" id="warningImage">
+        </div>
+        <h2 id="warningHeading">Question Upload SuccessFully</h2>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

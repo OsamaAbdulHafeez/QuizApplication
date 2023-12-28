@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #ed5585;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4rem;
+}
+
+nav .logo {
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav .profile ul{
+    display: flex;
+    align-items: center;
+}
+nav .profile ul li{
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+}
+nav .profile ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#setting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav .profile img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+nav .profile p {
+    color: #fff;
+    font-family: sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+nav .profile i {
+    color: #fff;
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.dropDown {
+    position: absolute;
+    right: 20px;
+    background-color: #6d9ac4;
+    width: fit-content;
+    border-top: 1px solid #000;
+    display: none;
+}
+
+.dropDown ul {
+    width: 180px;
+}
+
+.dropDown ul li {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.dropDown ul li i {
+    margin-right: 25px;
+}
+
+/* Main Section */
+.AdminForms {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin: auto;
+    padding: 20px 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.QuizForm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: 33%;
+    padding: 10px 20px;
+    margin: 15px;
+    height: fit-content;
+}
+
+.QuizForm h2 {
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ed5585;
+    margin-bottom: 12px;
+}
+
+input,
+select {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #4c4b4b;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #6d9ac4;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input::placeholder {
+    color: #6d9ac4;
+}
+
+input:focus {
+    background-color: #ed5585;
+    color: #fff;
+    font-size: 18px;
+}
+
+input:focus::placeholder {
+    color: #fff;
+}
+
+option {
+    background-color: #ed5585;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.QuizForm button {
+    background-color: #6d9ac4;
+    margin: 10px auto;
+    border: none;
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+#quiznamealert,
+#quizquealert,
+#quizoption1alert,
+#quizoption2alert,
+#quizoption3alert,
+#quizoption4alert,
+#quizansweralert,
+#categoryalert {
+    color: #d01616;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+/* Warning */
+#warning {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 450px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 1s;
+}
+@keyframes zommin{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#warnImg{
+    background-color: #8cc63e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    animation: zommin 1s infinite;
+}
+#warnImg img{
+    width: 100%;
+}
+#warning h2{
+    font-size: 28px;
+    text-align: center;
+    color: #4c4b4b;
+    font-weight: 500;
+    margin-top: 40px;
+}

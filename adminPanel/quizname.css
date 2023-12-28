@@ -1,0 +1,51 @@
+#QuizType{
+    margin: 10px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#QuizType h2{
+    font-size: 36px;
+    color: #6d9ac4;
+    text-align: center;
+}
+#QuizType ul{
+    display: flex;
+}
+#QuizType ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #ed5585;
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+#QuizType ul li i{
+    margin: 0px 3px;
+}
+li i:nth-child(1){
+    color: #ede66f;
+}
+li i:nth-child(2){
+    color: #143657;
+}
+
+/* Quiz Form */
+.QuizForm{
+    margin: auto;
+    top: -30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 2s;
+    background-color: #fff;
+}
+.QuizForm i{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    color: #6d9ac4;
+    font-size: 28px;
+}
